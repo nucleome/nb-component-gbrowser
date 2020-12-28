@@ -1,7 +1,7 @@
 {
   "name": "@nucleome/nb-component-gbrowser",
   "version": "0.0.1",
-  "description": "nucleome gbrowser render and component",
+  "description": "nucleome genome browser component",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production -c",
@@ -10,7 +10,8 @@
   },
   "keywords": [
     "nucleome",
-    "component"
+    "component",
+    "genome"
   ],
   "author": "zhuxp",
   "license": "GPL",
@@ -23,18 +24,22 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@nucleome/nb-dispatch": "0.0.5",
     "@nucleome/nb-tools": "^0.0.2",
+    "awesomplete": "^1.1.5",
     "d3": "^5.16.0",
     "d3-dispatch": "^1.0.6",
     "d3-scale": "^3.2.1",
     "d3-selection": "^1.4.1",
+    "dat.gui": "^0.7.7",
+    "handsontable": "^8.2.0",
     "jquery": "^3.5.1",
+    "plotly.js-dist": "^1.58.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "babel-loader": "^8.0.6",
     "gh-pages": "^2.2.0",
-    "webpack": "latest",
+    "webpack": "^4.0.0",
     "webpack-cli": "^3.3.10"
   }
 }
