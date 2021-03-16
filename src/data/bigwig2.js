@@ -6,12 +6,15 @@ import font from "../shape/font"
 import complementaryColor from "../tools/complementaryColor"
 
 import bgPlot from "./bgPlot"
+
+// TODO .. d3 to d3 sleection and fetch et al. 
 import * as d3 from "d3"
 import sandInits from "../sandInits"
 import sandHeaders from "../sandHeaders"
 
 var _font = font()
 export default function() {
+    // TODO  if  width = 0 
     var color = "#333333"
     var id = "default"
     var pos = 0 //for response rect TODO remove this limitation (change to id or get the response var)
@@ -41,6 +44,7 @@ export default function() {
         console.log("callback", d)
     }
 
+    // TODO  Handle Long Labels ... 
     var renderLongLabel = function(ctx) {
         var l = longLabel.length
         var x = width / 2 - _font.width * l / 2
@@ -353,8 +357,13 @@ export default function() {
 
     /* entry point for render */
     var render = function() {
+        if (width == 0 || width == null || typeof width == "undefined") {
+            console.warn("width is zero, not fetch bigwig data")
+            return 
+        }
         var length = totalLength(regions)
         var url = URI + "/" + id + "/binsize/" + length + "/" + width
+        // TODO Filter Width == 0 
         d3.json(url, {
             credentials: 'include',
             headers: sandHeaders //TODO: global variable sandHeaders 

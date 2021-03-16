@@ -374,6 +374,7 @@ export default {
             max = -Infinity
             mats = []
             results.forEach(function(text, i) {
+                // TODO text == "key not found"
                 var data = d3.tsvParseRows(text).map(function(row) {
                     return row.map(function(value) {
                         var v = +value
