@@ -34,7 +34,9 @@ import Divider from '@material-ui/core/Divider';
 
 import Popover from '@material-ui/core/Popover';
 
-import useStyles from "./styles"
+//import useStyles from "./styles"
+//
+import useStyles from "../../../../../src/styles.js"
 
 import * as d3 from "d3"
 
