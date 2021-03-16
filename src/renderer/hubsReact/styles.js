@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
             margin: theme.spacing(1),
         },
     },
-    menubar: {
+    menuBar: {
         flexGrow: 1,
         flexWrap: 'wrap',
     },

@@ -41,7 +41,7 @@ export default function(props) {
         setGenome(d)
     })
     return (
-        <div className={classes.menubar}>
+        <div className={classes.menuBar}>
       <AppBar className={classes.appBar} position="static">
         <Toolbar variant="dense">
   <IconButton aria-label="Play" id="btnPlay" label="Plot" className={classes.iconButton}>
