@@ -361,8 +361,9 @@ export default function() {
             console.warn("width is zero, not fetch bigwig data")
             return 
         }
+        var _width = Math.round(width)
         var length = totalLength(regions)
-        var url = URI + "/" + id + "/binsize/" + length + "/" + width
+        var url = URI + "/" + id + "/binsize/" + length + "/" + _width
         // TODO Filter Width == 0 
         d3.json(url, {
             credentials: 'include',
